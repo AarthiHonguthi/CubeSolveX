@@ -1,6 +1,4 @@
-//
-// Created by Pranav on 25-07-2025.
-//
+
 
 #ifndef CUBESCANNER_H
 #define CUBESCANNER_H
