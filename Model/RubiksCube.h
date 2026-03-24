@@ -1,7 +1,4 @@
-//
-// Created by Shubham Patil on 17/12/21.
-// Modified by Pranav Harresh on 25/07/25.
-//
+
 
 #ifndef RUBIKS_CUBE_SOLVER_RUBIKSCUBE_H
 #define RUBIKS_CUBE_SOLVER_RUBIKSCUBE_H

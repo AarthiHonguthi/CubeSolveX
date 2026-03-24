@@ -286,19 +286,21 @@ int main() {
 
 // CubeScanner Testing ----------------------------------------------------------------------------------
 
-    string fileName = "C:\\Users\\Pranav\\CLionProjects\\rubiks-cube-solver\\Databases\\cornerDepth5V1.txt";
+string fileName = "C:\Users\\ASUS\\Downloads\\Rubik\rubiks-cube-solver\\Databases\\cornerDepth5V1.txt";
+// C:\Users\ASUS\Downloads\Rubik\rubiks-cube-solver\Databases\cornerDepth5V1.txt
 
-    CubeScanner scanner(0);
-    RubiksCubeBitboard cube;
-    scanner.scan(cube);
-    cube.print();
+CubeScanner scanner(0);
+RubiksCubeBitboard cube;
+scanner.scan(cube);
+cube.print();
 
-    IDAstarSolver<RubiksCubeBitboard, HashBitboard> idAstarSolver(cube, fileName);
-    auto solve_moves = idAstarSolver.solve();
+IDAstarSolver<RubiksCubeBitboard, HashBitboard> idAstarSolver(cube, fileName);
+auto solve_moves = idAstarSolver.solve();
 
-    for (auto move: solve_moves) cout << cube.getMove(move) << " ";
-    cout << "\n";
-    idAstarSolver.rubiksCube.print();
+for (auto move : solve_moves)
+    cout << cube.getMove(move) << " ";
+cout << "\n";
+idAstarSolver.rubiksCube.print();
 
-    return 0;
+return 0;
 }
